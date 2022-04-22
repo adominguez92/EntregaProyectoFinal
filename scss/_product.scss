@@ -1,0 +1,27 @@
+#bodyPageProduct
+{
+    margin: 2rem 1rem;
+    text-align: center;
+
+    .bodyPageProduct__contenido__img, .bodyPageProduct__segudnContenido__img
+    {
+        width: 60rem;
+        height: auto;
+        margin: 0.1rem 0.1rem;
+    }
+}
+
+.bodyPageProduct__contenido__title, .bodyPageProduct__segundoContenido__title
+{
+    padding: 2rem 1rem;
+    margin: 1rem;
+    font-size: 4rem;
+}
+
+#bodyPageProduct p
+{
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
