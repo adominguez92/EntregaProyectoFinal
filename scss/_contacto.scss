@@ -1,3 +1,4 @@
+/*Contact*/
 #bodyPageContact
 {
     margin: 1rem;
@@ -34,7 +35,7 @@
 
 .bodyPageContact__contenido__form__grups__input
 {
-    width: 100%;
+    width: $anchoMaximo;
     background: none;
     color: 706c6c;
     font-size: 1rem;
@@ -42,7 +43,7 @@
     border: none;
     outline: none;
     border-bottom: 1px solid;
-    font-family: 'Permanent Marker', cursive;
+    font-family: $font-style;
 }
 .bodyPageContact__contenido__form__grups__lable
 {
@@ -52,11 +53,11 @@
 }
 .bodyPageContact__contenido__form__cont__submit
 {
-    margin: 5rem 1rem 0 1rem;
+    margin: 5rem $marggin-padding-generico 0 $marggin-padding-generico;
     width: 8rem;
     height: 2rem;
     background: $color-buttom;
-    font-family: 'Permanent Marker', cursive;
+    font-family: $font-style;
     color:$color-buttom-text;
     border-radius: 0.5rem;
     font-size: 1.2rem;

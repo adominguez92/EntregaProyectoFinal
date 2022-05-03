@@ -1,27 +1,26 @@
+/*Disagner*/
 #bodyPageDisagner
 {
-    margin: 2rem 1rem;
+    margin: 2rem $marggin-padding-generico;
     text-align: center;
 }
 
-.bodyPageDisagner__contenido__title, .bodyPageDisagner__segundoContenido__title, .bodyPageDisagner__tercerContenido__title
+.bodyPageDisagner__contenido__title
 {
-    padding: 2rem 1rem;
-    margin: 1rem;
-    font-size: 4rem;
+    padding: 2rem $marggin-padding-generico;
+    margin: $marggin-padding-generico;
+    font-size: $fuente-generica;
+}
+.bodyPageDisagner__segundoContenido__title, .bodyPageDisagner__tercerContenido__title
+{
+    @extend .bodyPageDisagner__contenido__title;
 }
 
-#bodyPageDisagner p
-{
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-}
 
 .bodyPageDisagner__contenido__video, .bodyPageDisagner__segundoContenido__video
 {
-    width: 80em;
-    height: 45em;
-    margin: 1rem;
+    width: $ancho-videos;
+    height: $alto-videos;
+    margin: $marggin-padding-generico;
     padding: 2rem;
 }

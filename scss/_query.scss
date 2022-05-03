@@ -10,3 +10,19 @@
         justify-content: none;
     }
 }*/
+
+/*Definir mixin */
+@mixin setAnchoLargo($ancho,$alto)
+{
+    width: $ancho;
+    height: $alto;
+}
+@mixin setP($padd,$marg,$font)
+{
+    padding: $padd;
+    margin: $marg;
+    font-size: $font;
+}
+
+
+

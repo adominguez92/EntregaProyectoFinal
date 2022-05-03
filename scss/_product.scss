@@ -1,6 +1,8 @@
+/*Product*/
+
 #bodyPageProduct
 {
-    margin: 2rem 1rem;
+    margin: 2rem $marggin-padding-generico;
     text-align: center;
 
     .bodyPageProduct__contenido__img, .bodyPageProduct__segudnContenido__img
@@ -13,15 +15,8 @@
 
 .bodyPageProduct__contenido__title, .bodyPageProduct__segundoContenido__title
 {
-    padding: 2rem 1rem;
-    margin: 1rem;
-    font-size: 4rem;
+    @extend .bodyPageDisagner__contenido__title;
 }
 
-#bodyPageProduct p
-{
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-}
+
 

@@ -1,10 +1,11 @@
 @import "var";
+@import "query";
 @import "contacto";
 @import "designer";
 @import "history";
 @import "product";
-@import "query";
-
+@import "home";
+/*Generico para todas las paginas*/
 *
 {
     margin: 0;
@@ -23,12 +24,12 @@ body
     align-items: stretch;
     justify-items: stretch;
 }
-
+//header
 #header
 {
     background-color: $color-head-back;
-    width: 100%;
-    padding: 2rem 1rem 2rem 1rem;
+    width: $anchoMaximo;
+    padding: $header-paddig-vertical $header-paddig-horizontal $header-paddig-vertical $header-paddig-horizontal;
     color: $color-texto;
     clear: both;
     content: "";
@@ -37,14 +38,13 @@ body
 }
 .header__navbar__container__logo
 {
-    width: 6rem;
-    height: 6rem;
+    @include setAnchoLargo($header-contanier-navbar,$header-contanier-navbar);
     float: left;
 }
 .header__navbar__container__titulo
 {
     text-align: center;
-    font-size: 3rem;
+    font-size: $header-font-size;
 }
 .header__navbar__container__links
 {
@@ -52,7 +52,7 @@ body
     margin: auto 0;
 }
 .header__navbar__container__links__list{
-    width: 31rem;
+    width: $header-ancho-link;
     margin-left: auto;
 }
 
@@ -61,7 +61,7 @@ body
     margin-left: 1rem;
     padding: 0.25rem 0;
 }
-//
+
 .header__navbar__container__links__list__items a
 {
     text-decoration: none;
@@ -77,125 +77,22 @@ body
 .header__navbar__container__links__list__items a::before
 {
     display: block;
+    @include setAnchoLargo(0%,0.25rem);
     content: "";
-    width: 0%;
     background: black;
-    height: 0.25rem;
     top: 0;
     transition: 0.2s;
 }
 
 .header__navbar__container__links__list__items a:hover::before
 {
-    width: 100%;
+    width: $anchoMaximo;
 }
-
-
-#bodyPage
-{
-    width: 60rem;
-    margin: 0 auto;
-   
-    
-    .bodyPage__comentanos
-    {
-        text-align: center;
-        margin: 1rem;
-        padding: 1;
-    }
-
-    .bodyPage__comentanos__link
-    {
-        text-decoration: none;
-        color: black;
-    }
-
-    .bodyPage__comentanos__link:hover
-    {
-        transition: color 0.3s ease;
-        color: rgb(40, 53, 238);
-    }   
-    .bodyPage__primerContenido__img, .bodyPage__tercerContenido__img
-    {
-    height: 15rem;
-    margin: 1rem;
-    padding: .1rem .2rem;
-    border-radius: 1.25rem!important;
-    }
-    .bodyPage__segundoContenido__video
-{
-    width: 40rem;
-    height: 30rem;
-    margin: 1rem;
-}
-}
-.bodyPage__primerContenido, .bodyPage__segundoContenido, .bodyPage__tercerContenido{
-    transition: box-shadow 0.3s ease;
-    background-color: $color-card;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    padding: 0.25rem 0;
-    cursor: pointer;
-    text-align: center;
-}
-    
-.bodyPage__primerContenido:hover, .bodyPage__segundoContenido:hover, .bodyPage__tercerContenido:hover{
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
-}
-
-
-.bodyPage__primerContenido a, .bodyPage__segundoContenido a, .bodyPage__tercerContenido a
-{
-    color:black;
-    text-decoration: none;
-}
-
-.bodyPage__primerContenido a:hover, .bodyPage__segundoContenido a:hover, .bodyPage__tercerContenido a:hover
-{
-    color:$color-head-back;
-}
-samp
-{
-    font-size: 1.75rem;
-    font-family: 'Permanent Marker', cursive;
-}
-
-samp:hover
-{
-    transition: 0.3s ease;
-    color: $color-texto;
-}
-.bodyPage__comentanos
-{
-    text-align: center;
-    margin: 1rem;
-    padding: 1;
-}
-
-.bodyPage__comentanos__link
-{
-    text-decoration: none;
-    color: black;
-}
-
-.bodyPage__comentanos__link:hover
-{
-    transition: color 0.3s ease;
-    color: rgb(40, 53, 238);
-}
-
-#bodyPage p
-{
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-}
-
-
+/*Footer*/
 #footer
 {
     background-color: $color-footer-back;
-    width: 100%;
+    width: $anchoMaximo;
     padding: 3rem;
     color: $color-footer-text;
     font-family: 'Roboto', sans-serif;
@@ -216,4 +113,11 @@ samp:hover
 #footer a:hover
 {
     color: rgb(75, 106, 246);
+}
+
+/*Aplicar minmix*/
+
+#bodyPageProduct p, #bodyPageHistory p, #bodyPageDisagner p
+{
+    @include setP($marggin-padding-generico,$marggin-padding-generico,1.5rem);
 }

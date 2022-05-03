@@ -1,25 +1,19 @@
+/*History*/
 #bodyPageHistory
 {
-    margin: 2rem 1rem;
+    margin: 2rem $marggin-padding-generico;
     text-align: center;
 }
 
 .bodyPageHistory__contenido__title
 {
-    padding: 2rem 1rem;
-    margin: 1rem;
-    font-size: 4rem;
+    @extend .bodyPageDisagner__contenido__title;
 }
 
-#bodyPageHistory p
-{
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-}
+
 
 .bodyPageHistory__contenido__img
 {
     padding: auto;
-    margin: 2rem 1rem;
+    margin: 2rem $marggin-padding-generico;
 }
