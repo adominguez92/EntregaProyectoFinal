@@ -5,6 +5,7 @@
 @import "history";
 @import "product";
 @import "home";
+@import "footer";
 /*Generico para todas las paginas*/
 *
 {
@@ -58,7 +59,7 @@ body
 
 .header__navbar__container__links__list__items
 {
-    margin-left: 1rem;
+    margin-left: $marggin-padding-generico;
     padding: 0.25rem 0;
 }
 
@@ -87,32 +88,6 @@ body
 .header__navbar__container__links__list__items a:hover::before
 {
     width: $anchoMaximo;
-}
-/*Footer*/
-#footer
-{
-    background-color: $color-footer-back;
-    width: $anchoMaximo;
-    padding: 3rem;
-    color: $color-footer-text;
-    font-family: 'Roboto', sans-serif;
-}
-
-#footer section 
-{
-    float: right;
-}
-
-#footer a
-{
-    transition: color 0.3s ease;
-    color: white;
-    text-decoration: none;
-}
-
-#footer a:hover
-{
-    color: rgb(75, 106, 246);
 }
 
 /*Aplicar minmix*/

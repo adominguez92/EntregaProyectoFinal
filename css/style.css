@@ -169,6 +169,25 @@ samp:hover {
   transition: color 0.3s ease;
   color: #2835ee; }
 
+/*Footer*/
+#footer {
+  background-color: #333333;
+  width: 100%;
+  padding: 3rem;
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif; }
+
+#footer section {
+  float: right; }
+
+#footer a {
+  transition: color 0.3s ease;
+  color: white;
+  text-decoration: none; }
+
+#footer a:hover {
+  color: #4b6af6; }
+
 /*Generico para todas las paginas*/
 * {
   margin: 0;
@@ -234,25 +253,6 @@ body {
 
 .header__navbar__container__links__list__items a:hover::before {
   width: 100%; }
-
-/*Footer*/
-#footer {
-  background-color: #333333;
-  width: 100%;
-  padding: 3rem;
-  color: whitesmoke;
-  font-family: 'Roboto', sans-serif; }
-
-#footer section {
-  float: right; }
-
-#footer a {
-  transition: color 0.3s ease;
-  color: white;
-  text-decoration: none; }
-
-#footer a:hover {
-  color: #4b6af6; }
 
 /*Aplicar minmix*/
 #bodyPageProduct p, #bodyPageHistory p, #bodyPageDisagner p {
