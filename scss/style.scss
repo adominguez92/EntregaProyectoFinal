@@ -15,8 +15,8 @@
 }
 
 body
-{
-    background-color: $color-pages-back;
+{ 
+    background-color: map-get($map: pallet, $key:color-pages-back ); 
     font-family: 'Permanent Marker', cursive;
     display: grid;
     grid-template-columns: auto;
@@ -25,13 +25,13 @@ body
     align-items: stretch;
     justify-items: stretch;
 }
-//header
+/*header*/
 #header
 {
-    background-color: $color-head-back;
+    background-color: map-get($map: pallet, $key:color-head-back );
     width: $anchoMaximo;
     padding: $header-paddig-vertical $header-paddig-horizontal $header-paddig-vertical $header-paddig-horizontal;
-    color: $color-texto;
+    color: map-get($map: pallet, $key:color-texto );
     clear: both;
     content: "";
     display: table;
@@ -66,7 +66,7 @@ body
 .header__navbar__container__links__list__items a
 {
     text-decoration: none;
-    color: $color-footer-a-text;
+    color: map-get($map: pallet, $key: color-footer-a-text);
     font-weight: bold;
 }
 .header__navbar__container__links__list__items a:hover

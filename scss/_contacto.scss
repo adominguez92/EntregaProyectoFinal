@@ -10,7 +10,7 @@
 
 .bodyPageContact__contenido__form
 {
-    background-color: $color-card;
+    background-color: map-get($map: pallet, $key:color-card);
     margin-left: 10rem;
     margin: auto;
     width: 90%;
@@ -37,7 +37,7 @@
 {
     width: $anchoMaximo;
     background: none;
-    color: 706c6c;
+    color: #706c6c;
     font-size: 1rem;
     padding: .6em .3em;
     border: none;
@@ -47,7 +47,7 @@
 }
 .bodyPageContact__contenido__form__grups__lable
 {
-    color: $color-texto;
+    color: map-get($map: pallet, $key: color-texto);
     cursor: pointer;
     position: relative;
 }
@@ -56,9 +56,9 @@
     margin: 5rem $marggin-padding-generico 0 $marggin-padding-generico;
     width: 8rem;
     height: 2rem;
-    background: $color-buttom;
+    color: map-get($map: pallet, $key: color-buttom);
     font-family: $font-style;
-    color:$color-buttom-text;
+    color:map-get($map: pallet, $key: color-buttom-text);
     border-radius: 0.5rem;
     font-size: 1.2rem;
 }

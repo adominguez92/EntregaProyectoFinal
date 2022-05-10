@@ -5,15 +5,21 @@
     text-align: center;
 }
 
-.bodyPageDisagner__contenido__title
+.title__Genericos
 {
     padding: 2rem $marggin-padding-generico;
     margin: $marggin-padding-generico;
+}
+
+.bodyPageDisagner__contenido__title 
+{
+    @extend .title__Genericos;
     font-size: $fuente-generica;
 }
 .bodyPageDisagner__segundoContenido__title, .bodyPageDisagner__tercerContenido__title
 {
-    @extend .bodyPageDisagner__contenido__title;
+    @extend .title__Genericos;
+    font-size: 2.5rem;
 }
 
 

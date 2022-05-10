@@ -1,15 +1,20 @@
 /* Colores */
-$color-pages-back:#efefef;
-$color-head-back: #364552;
-$color-texto:coral;
-$color-texto-resaltante: coral;
-$color-card: white;
-$color-footer-back: #333333;
-$color-footer-text:whitesmoke;
-$color-footer-a-text: whitesmoke;
-$color-footer-a-hover: rgb(75, 106, 246);
-$color-buttom: #364552;
-$color-buttom-text:whitesmoke;
+/*Definir Maps*/
+
+$pallet:
+(
+    'color-pages-back':#efefef,
+    'color-head-back': #364552,
+    'color-footer-back': #333333,
+    'color-card':white,
+    'color-texto':coral,
+    'color-texto-resaltante': coral,
+    'color-footer-text':whitesmoke,
+    'color-footer-a-text': whitesmoke,
+    'color-footer-a-hover': rgb(75, 106, 246),
+    'color-buttom': #364552,
+    'color-buttom-text':whitesmoke
+);
 
 /* Tamñaos*/
 

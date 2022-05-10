@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Colores */
+/*Definir Maps*/
 /* Tamñaos*/
 /* Media Queris*/
 /*@media screen and (max-width: 880px){
@@ -44,7 +45,7 @@
 .bodyPageContact__contenido__form__grups__input {
   width: 100%;
   background: none;
-  color: 706c6c;
+  color: #706c6c;
   font-size: 1rem;
   padding: .6em .3em;
   border: none;
@@ -61,7 +62,7 @@
   margin: 5rem 1rem 0 1rem;
   width: 8rem;
   height: 2rem;
-  background: #364552;
+  color: #364552;
   font-family: "Permanent Marker", cursive;
   color: whitesmoke;
   border-radius: 0.5rem;
@@ -72,10 +73,15 @@
   margin: 2rem 1rem;
   text-align: center; }
 
-.bodyPageDisagner__contenido__title, .bodyPageDisagner__segundoContenido__title, .bodyPageDisagner__tercerContenido__title, .bodyPageHistory__contenido__title, .bodyPageProduct__contenido__title, .bodyPageProduct__segundoContenido__title {
+.title__Genericos, .bodyPageDisagner__contenido__title, .bodyPageDisagner__segundoContenido__title, .bodyPageDisagner__tercerContenido__title, .bodyPageHistory__contenido__title, .bodyPageProduct__contenido__title {
   padding: 2rem 1rem;
-  margin: 1rem;
+  margin: 1rem; }
+
+.bodyPageDisagner__contenido__title {
   font-size: 4rem; }
+
+.bodyPageDisagner__segundoContenido__title, .bodyPageDisagner__tercerContenido__title {
+  font-size: 2.5rem; }
 
 .bodyPageDisagner__contenido__video, .bodyPageDisagner__segundoContenido__video {
   width: 80em;
@@ -87,6 +93,9 @@
 #bodyPageHistory {
   margin: 2rem 1rem;
   text-align: center; }
+
+.bodyPageHistory__contenido__title {
+  font-size: 4rem; }
 
 .bodyPageHistory__contenido__img {
   padding: auto;
@@ -100,6 +109,10 @@
     width: 60rem;
     height: auto;
     margin: 0.1rem 0.1rem; }
+
+.bodyPageProduct__contenido__title {
+  font-size: 4rem;
+  color: coral; }
 
 /*Home*/
 #bodyPage {
@@ -182,7 +195,7 @@ samp:hover {
 
 #footer a {
   transition: color 0.3s ease;
-  color: white;
+  color: whitesmoke;
   text-decoration: none; }
 
 #footer a:hover {
@@ -204,6 +217,7 @@ body {
   align-items: stretch;
   justify-items: stretch; }
 
+/*header*/
 #header {
   background-color: #364552;
   width: 100%;

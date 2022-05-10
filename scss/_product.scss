@@ -13,9 +13,11 @@
     }
 }
 
-.bodyPageProduct__contenido__title, .bodyPageProduct__segundoContenido__title
+.bodyPageProduct__contenido__title
 {
-    @extend .bodyPageDisagner__contenido__title;
+    @extend .title__Genericos;
+    font-size: $fuente-generica;
+    color: map-get($map: pallet, $key:color-texto );
 }
 
 
