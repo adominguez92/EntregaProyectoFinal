@@ -1,26 +1,42 @@
 /*Footer*/
-#footer
-{ 
-    background-color: map-get($map: pallet, $key: color-footer-back);
-    width: $anchoMaximo;
+.footer {
+    background-color: #333333;
+    width: 100%;
     padding: 3rem;
-    color: map-get($map: pallet, $key: color-footer-text);
+     }
+  
+  .footer__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-between;
+    color: whitesmoke;
     font-family: 'Roboto', sans-serif;
-}
+    margin:auto;
+    margin-top: 1rem;
+     }
+  
+  .footer__section__iconos
+  {
+    padding: 1rem;
+    display: flex;
+  }
+  .footer__section__p
+  {
+    margin: 0 1rem;
+  }
+  .footer__section__iconos i
+  {
+    width: 5rem;
+    height: 5rem;
+  }
 
-#footer section 
-{
-    float: right;
-}
-
-#footer a
-{
-    transition: color 0.3s ease; 
-    color: map-get($map: pallet, $key: color-footer-a-text);
+  .footer__section__iconos a {
+    transition: color 0.3s ease;
+    color: whitesmoke;
     text-decoration: none;
-}
-
-#footer a:hover
-{
-    color: map-get($map: pallet, $key: color-footer-a-hover);
-}
+     }
+  
+  .footer a:hover {
+    color: #4b6af6; }
+  
+  

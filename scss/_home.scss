@@ -1,48 +1,43 @@
 /*Home*/
-#bodyPage
+
+.bodyPage__comentanos
 {
-    width: 60rem;
-    margin: 0 auto;
-   
-    
-    .bodyPage__comentanos
-    {
-        text-align: center;
-        margin: $marggin-padding-generico;
-        padding: 1;
-    }
-
-    .bodyPage__comentanos__link
-    {
-        text-decoration: none;
-        color: black;
-    }
-
-    .bodyPage__comentanos__link:hover
-    {
-        transition: color 0.3s ease;
-        color: rgb(40, 53, 238);
-    }   
-    .bodyPage__primerContenido__img, .bodyPage__tercerContenido__img
-    {
-        height: 15rem;
-        margin: $marggin-padding-generico;
-        padding: .1rem .2rem;
-        border-radius: 1.25rem!important;
-    }
-    .bodyPage__segundoContenido__video
-    {
-        width: 40rem;
-        height: 30rem;
-        margin: $marggin-padding-generico;
-    }
-    #bodyPage p
-    {
-    padding: $marggin-padding-generico;
+    text-align: center;
     margin: $marggin-padding-generico;
-    font-size: 1.5rem;
-    }
+    padding: 1;
 }
+
+.bodyPage__comentanos__link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.bodyPage__comentanos__link:hover
+{
+    transition: color 0.3s ease;
+    color: rgb(40, 53, 238);
+}   
+.bodyPage__primerContenido__img, .bodyPage__tercerContenido__img
+{
+    height: 15rem;
+    margin: $marggin-padding-generico;
+    padding: .1rem .2rem;
+    border-radius: 1.25rem!important;
+}
+.bodyPage__segundoContenido__video
+{
+    width: 40rem;
+    height: 30rem;
+    margin: $marggin-padding-generico;
+}
+#bodyPage p
+{
+padding: $marggin-padding-generico;
+margin: $marggin-padding-generico;
+font-size: 1.5rem;
+}
+
 .bodyPage__primerContenido, .bodyPage__segundoContenido, .bodyPage__tercerContenido{
     transition: box-shadow 0.3s ease;
     background-color: map-get($map: pallet, $key: color-card);
@@ -71,13 +66,14 @@
 samp
 {
     font-size: 1.75rem;
-    font-family: $font-style;
+    color: coral;
+    font-family: "Permanent Marker", cursive; 
 }
 
 samp:hover
 {
-    transition: 0.3s ease;
-    color: map-get($map: pallet, $key: color-texto);
+    transition: 0.5s ease;
+    color: rgb(174, 48, 2); 
 }
 .bodyPage__comentanos
 {
@@ -94,8 +90,8 @@ samp:hover
 
 .bodyPage__comentanos__link:hover
 {
-    transition: color 0.3s ease;
-    color: rgb(40, 53, 238);
+    transition: color 0.5s ease;
+    color: rgb(174, 48, 2);;
 }
 
 

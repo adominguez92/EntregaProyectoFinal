@@ -3,16 +3,17 @@
 /*Definir Maps*/
 /* Tamñaos*/
 /* Media Queris*/
-/*@media screen and (max-width: 880px){
-    body{
-        justify-content: space-between;
-    }
+
+@media screen and (max-width: 900px){
+  #bodyPage {
+      width:100%;
+      margin: 0 auto; }
 }
-@media screen and (min-width: 881px){
-    body{
-        justify-content: none;
-    }
-}*/
+@media screen and (min-width: 901px){
+  #bodyPage {
+      width: 60rem;
+      margin: 0 auto; }
+}    
 /*Definir mixin */
 /*Contact*/
 #bodyPageContact {
@@ -69,10 +70,12 @@
   font-size: 1.2rem; }
 
 /*Disagner*/
-#bodyPageDisagner {
-  margin: 2rem 1rem;
-  text-align: center; }
 
+#bodyPageDisagner
+  {
+  margin: 2rem 1rem;
+  text-align: center;
+  width: 100%; }
 .title__Genericos, .bodyPageDisagner__contenido__title, .bodyPageDisagner__segundoContenido__title, .bodyPageDisagner__tercerContenido__title, .bodyPageHistory__contenido__title, .bodyPageProduct__contenido__title {
   padding: 2rem 1rem;
   margin: 1rem; }
@@ -90,10 +93,11 @@
   padding: 2rem; }
 
 /*History*/
-#bodyPageHistory {
-  margin: 2rem 1rem;
-  text-align: center; }
-
+#bodyPageHistory
+{
+margin: 2rem 1rem;
+text-align: center;
+width: 100%; }
 .bodyPageHistory__contenido__title {
   font-size: 4rem; }
 
@@ -102,9 +106,11 @@
   margin: 2rem 1rem; }
 
 /*Product*/
-#bodyPageProduct {
-  margin: 2rem 1rem;
-  text-align: center; }
+#bodyPageProduct
+{
+margin: 2rem 1rem;
+text-align: center;
+width: 100%; }
   #bodyPageProduct .bodyPageProduct__contenido__img, #bodyPageProduct .bodyPageProduct__segudnContenido__img {
     width: 60rem;
     height: auto;
@@ -115,32 +121,30 @@
   color: coral; }
 
 /*Home*/
-#bodyPage {
-  width: 60rem;
-  margin: 0 auto; }
-  #bodyPage .bodyPage__comentanos {
-    text-align: center;
-    margin: 1rem;
-    padding: 1; }
-  #bodyPage .bodyPage__comentanos__link {
-    text-decoration: none;
-    color: black; }
-  #bodyPage .bodyPage__comentanos__link:hover {
-    transition: color 0.3s ease;
-    color: #2835ee; }
-  #bodyPage .bodyPage__primerContenido__img, #bodyPage .bodyPage__tercerContenido__img {
-    height: 15rem;
-    margin: 1rem;
-    padding: .1rem .2rem;
-    border-radius: 1.25rem !important; }
-  #bodyPage .bodyPage__segundoContenido__video {
-    width: 40rem;
-    height: 30rem;
-    margin: 1rem; }
-  #bodyPage #bodyPage p {
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.5rem; }
+
+#bodyPage .bodyPage__comentanos {
+  text-align: center;
+  margin: 1rem;
+  padding: 1; }
+#bodyPage .bodyPage__comentanos__link {
+  text-decoration: none;
+  color: black; }
+#bodyPage .bodyPage__comentanos__link:hover {
+  transition: color 0.3s ease;
+  color: #2835ee; }
+#bodyPage .bodyPage__primerContenido__img, #bodyPage .bodyPage__tercerContenido__img {
+  height: 15rem;
+  margin: 1rem;
+  padding: .1rem .2rem;
+  border-radius: 1.25rem !important; }
+#bodyPage .bodyPage__segundoContenido__video {
+  width: 40rem;
+  height: 30rem;
+  margin: 1rem; }
+#bodyPage #bodyPage p {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem; }
 
 .bodyPage__primerContenido, .bodyPage__segundoContenido, .bodyPage__tercerContenido {
   transition: box-shadow 0.3s ease;
@@ -163,11 +167,12 @@
 
 samp {
   font-size: 1.75rem;
+  color: coral;
   font-family: "Permanent Marker", cursive; }
 
 samp:hover {
-  transition: 0.3s ease;
-  color: coral; }
+  transition: 0.5s ease;
+  color: rgb(174, 48, 2); }
 
 .bodyPage__comentanos {
   text-align: center;
@@ -179,26 +184,48 @@ samp:hover {
   color: black; }
 
 .bodyPage__comentanos__link:hover {
-  transition: color 0.3s ease;
-  color: #2835ee; }
+  transition: color 0.5s ease;
+  color: rgb(174, 48, 2); }
 
 /*Footer*/
-#footer {
+.footer {
   background-color: #333333;
   width: 100%;
   padding: 3rem;
+   }
+
+.footer__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-between;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  margin:auto;
+  margin-top: 1rem;
+   }
 
-#footer section {
-  float: right; }
+.footer__section__iconos
+{
+  padding: 1rem;
+  display: flex;
+}
+.footer__section__p
+{
+  margin: 0 1rem;
+}
+.footer__section__iconos i
+{
+  width: 5rem;
+  height: 5rem;
+}
 
-#footer a {
+.footer__section__iconos a {
   transition: color 0.3s ease;
   color: whitesmoke;
-  text-decoration: none; }
+  text-decoration: none;
+   }
 
-#footer a:hover {
+.footer a:hover {
   color: #4b6af6; }
 
 /*Generico para todas las paginas*/
@@ -237,8 +264,10 @@ body {
   font-size: 3rem; }
 
 .header__navbar__container__links {
-  width: 900px;
+  width: 1rem;
   margin: auto 0; }
+
+  
 
 .header__navbar__container__links__list {
   width: 31rem;
