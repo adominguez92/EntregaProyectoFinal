@@ -13,7 +13,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+iframe
+{
+  max-width: 100%;
+}
 body
 { 
     background-color: map-get($map: pallet, $key:color-pages-back ); 

@@ -3,7 +3,7 @@
 .bodyPage__comentanos
 {
     text-align: center;
-    margin: $marggin-padding-generico;
+    margin: 1rem;
     padding: 1;
 }
 
@@ -20,16 +20,19 @@
 }   
 .bodyPage__primerContenido__img, .bodyPage__tercerContenido__img
 {
-    height: 15rem;
-    margin: $marggin-padding-generico;
+    width: 30rem;
+    height: auto;
+    margin: 0.1rem 0.1rem; 
+    max-width: 100%;
     padding: .1rem .2rem;
-    border-radius: 1.25rem!important;
+    border-radius: 1.25rem !important; 
+    max-width: 100%
 }
 .bodyPage__segundoContenido__video
 {
-    width: 40rem;
+    width: 35rem;
     height: 30rem;
-    margin: $marggin-padding-generico;
+    margin: 1rem;
 }
 #bodyPage p
 {
@@ -40,8 +43,7 @@ font-size: 1.5rem;
 
 .bodyPage__primerContenido, .bodyPage__segundoContenido, .bodyPage__tercerContenido{
     transition: box-shadow 0.3s ease;
-    background-color: map-get($map: pallet, $key: color-card);
-    margin: $marggin-padding-generico 0;
+    margin: 1rem 0;
     border-radius: 0.5rem;
     padding: 0.25rem 0;
     cursor: pointer;

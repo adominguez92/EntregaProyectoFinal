@@ -1,14 +1,42 @@
 /* Media Queris*/
- @media screen and (max-width: 900px){
-        #bodyPage {
-            width:100%;
-            margin: 0 auto; }
+@media screen and (max-width: 900px){
+    #bodyPage {
+        width:100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center; }
+  }
+  @media screen and (min-width: 901px){
+    #bodyPage {
+        width: 60rem;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center; }
+  }  
+  @media screen and (max-width: 999px){
+    .bodyPage__primerContenido__img, #bodyPage .bodyPage__tercerContenido__img {
+      float: none;
     }
-    @media screen and (min-width: 901px){
-        #bodyPage {
-            width: 60rem;
-            margin: 0 auto; }
+  }
+  @media screen and (min-width: 1000px){
+     .bodyPage__primerContenido__img, #bodyPage .bodyPage__tercerContenido__img {
+      float: left;
     }
+  }  
+  @media screen and (max-width: 999px){
+    .bodyPage__segundoContenido__video {
+      float: none;
+    }
+  }
+  @media screen and (min-width: 1000px){
+    .bodyPage__segundoContenido__video {
+      float: left;
+    }
+  }  
 
 /*Definir mixin */
 @mixin setAnchoLargo($ancho,$alto)

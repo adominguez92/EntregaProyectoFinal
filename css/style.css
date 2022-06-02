@@ -7,13 +7,41 @@
 @media screen and (max-width: 900px){
   #bodyPage {
       width:100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center; }
 }
 @media screen and (min-width: 901px){
   #bodyPage {
       width: 60rem;
-      margin: 0 auto; }
-}    
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center; }
+}  
+@media screen and (max-width: 999px){
+  .bodyPage__primerContenido__img, #bodyPage .bodyPage__tercerContenido__img {
+    float: none;
+  }
+}
+@media screen and (min-width: 1000px){
+   .bodyPage__primerContenido__img, #bodyPage .bodyPage__tercerContenido__img {
+    float: left;
+  }
+}  
+@media screen and (max-width: 999px){
+  .bodyPage__segundoContenido__video {
+    float: none;
+  }
+}
+@media screen and (min-width: 1000px){
+  .bodyPage__segundoContenido__video {
+    float: left;
+  }
+}     
 /*Definir mixin */
 /*Contact*/
 #bodyPageContact {
@@ -103,7 +131,8 @@ width: 100%; }
 
 .bodyPageHistory__contenido__img {
   padding: auto;
-  margin: 2rem 1rem; }
+  margin: 2rem 1rem; 
+  max-width: 100%;}
 
 /*Product*/
 #bodyPageProduct
@@ -114,7 +143,8 @@ width: 100%; }
   #bodyPageProduct .bodyPageProduct__contenido__img, #bodyPageProduct .bodyPageProduct__segudnContenido__img {
     width: 60rem;
     height: auto;
-    margin: 0.1rem 0.1rem; }
+    margin: 0.1rem 0.1rem; 
+    max-width: 100%;}
 
 .bodyPageProduct__contenido__title {
   font-size: 4rem;
@@ -133,12 +163,15 @@ width: 100%; }
   transition: color 0.3s ease;
   color: #2835ee; }
 #bodyPage .bodyPage__primerContenido__img, #bodyPage .bodyPage__tercerContenido__img {
-  height: 15rem;
-  margin: 1rem;
+  width: 30rem;
+  height: auto;
+  margin: 0.1rem 0.1rem; 
+  max-width: 100%;
   padding: .1rem .2rem;
-  border-radius: 1.25rem !important; }
+  border-radius: 1.25rem !important; 
+  max-width: 100%}
 #bodyPage .bodyPage__segundoContenido__video {
-  width: 40rem;
+  width: 35rem;
   height: 30rem;
   margin: 1rem; }
 #bodyPage #bodyPage p {
@@ -148,7 +181,6 @@ width: 100%; }
 
 .bodyPage__primerContenido, .bodyPage__segundoContenido, .bodyPage__tercerContenido {
   transition: box-shadow 0.3s ease;
-  background-color: white;
   margin: 1rem 0;
   border-radius: 0.5rem;
   padding: 0.25rem 0;
@@ -242,8 +274,12 @@ body {
   grid-template-rows: auto auto auto;
   align-content: space-around;
   align-items: stretch;
-  justify-items: stretch; }
-
+  justify-items: stretch; 
+  max-width: 100%;}
+iframe
+{
+  max-width: 100%;
+}
 /*header*/
 #header {
   background-color: #364552;
